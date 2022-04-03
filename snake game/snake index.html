@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>snake game</title>
+  <link rel="stylesheet" href="snake style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <div class="container noselect">
+    <div class="wrapper">
+      <button id="replay">
+        <i class="fas fa-redo"></i>
+        RESTART
+      </button>
+      <div id="canvas">
+      </div>
+      <div id="ui">
+        <h2>SCORE</h2>
+        <span id="score">00</span>
+      </div>
+    </div>
+    <audio id="eating" src="/bg/eat food.m4a"></audio>
+    <audio id="gameend" src="bg/game end.m4a"></audio>
+  </div>
+  <script src="snake script.js"></script>
+</body>
+
+</html>
